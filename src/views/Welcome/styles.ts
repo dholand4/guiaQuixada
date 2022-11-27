@@ -3,8 +3,6 @@ import styled from "styled-components/native";
 export const Container = styled.View`
 flex: 1;
 align-items: center;
-justify-content: center;
-background-color: ${({theme}) => theme.colors.background};
 `;
 
 export const Background = styled.Image`
@@ -19,13 +17,12 @@ export const Footer  = styled.View`
 
 border-radius: 10px;
 height: 35%;
-bottom: 100px;
+bottom: 10%;
 width: 95%;
 background-color: ${({theme}) => theme.colors.background};
 align-items: center;
 position: absolute;
 padding: 20px;
-align-items: center;
 `;
 
 export const CotainerButton = styled.View`
