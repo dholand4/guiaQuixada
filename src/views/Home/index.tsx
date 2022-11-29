@@ -1,7 +1,7 @@
 import React from 'react';
 import { initialWindowMetrics } from 'react-native-safe-area-context';
 import { Button } from '../../components/Button';
-import { ButtonEmpty } from '../../components/ButtonEmpty';
+import { ButtonEmpty } from '../../components/Button';
 import * as S from './styles'; 
 
 

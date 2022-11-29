@@ -3,26 +3,32 @@ import styled from "styled-components/native";
 export const Container = styled.View`
 flex: 1;
 align-items: center;
+background-color: ${({theme}) => theme.colors.background_white};
 `;
 
-export const Background = styled.Image`
-flex: 1;
-height: 2024px;
-width: 580px;
-left: 80px; 
+export const Content = styled.View`
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
 
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    ;
 `;
 
 export const Footer  = styled.View`
-
-border-radius: 10px;
-height: 35%;
-bottom: 10%;
-width: 95%;
-background-color: ${({theme}) => theme.colors.background};
-align-items: center;
-position: absolute;
-padding: 20px;
+justify-content: center;
+    align-items: center;
+border-radius: 25px;
+        height: 80%;
+        background-color: ${({theme}) => theme.colors.background};
+        padding: 20px;
+        width: 95%;
+        top: 300px;
+        position: relative;
+        
 `;
 
 export const CotainerButton = styled.View`
@@ -39,17 +45,8 @@ color: ${({theme}) => theme.colors.background_white};
 
 export const subTitle = styled.Text`
 margin-bottom: 25px;
-margin-top: 25px;
+margin-top: 10px;
 font-size: 14px;
 text-align: center;
 color: ${({theme}) => theme.colors.background_white};
-`;
-
-export const line = styled.View`
-border: 0.8px;
-width: 20%;
-margin-top: -10px;
-margin-bottom: 15px;
-border-color: ${({theme}) => theme.colors.background_white};
-background-color: ${({theme}) => theme.colors.background_white};
 `;
